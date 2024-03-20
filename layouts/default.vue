@@ -17,15 +17,34 @@
         </sidebar-item>
         <sidebar-item
           :link="{
-            name: $t('sidebar.icons'),
-            icon: 'tim-icons icon-atom',
-            path: '/icons'
+            name: $t('Dispositivos'),
+            icon: 'tim-icons icon-laptop',
+            path: '/devices'
           }"
         >
         </sidebar-item>
+
         <sidebar-item
           :link="{
-            name: $t('sidebar.maps'),
+            name: $t('Alertas'),
+            icon: 'tim-icons icon-bell-55',
+            path: '/alarms'
+          }"
+        >
+        </sidebar-item>
+
+        <sidebar-item
+          :link="{
+            name: $t('Notificaciones'),
+            icon: 'tim-icons icon-chat-33',
+            path: '/notifications'
+          }"
+        >
+        </sidebar-item>
+
+        <sidebar-item
+          :link="{
+            name: $t('Mapa'),
             icon: 'tim-icons icon-pin',
             path: '/google'
           }"
@@ -34,16 +53,16 @@
 
         <sidebar-item
           :link="{
-            name: $t('sidebar.notifications'),
-            icon: 'tim-icons icon-bell-55',
-            path: '/notifications'
+            name: $t('Íconos'),
+            icon: 'tim-icons icon-atom',
+            path: '/icons'
           }"
         >
         </sidebar-item>
 
         <sidebar-item
           :link="{
-            name: $t('sidebar.userProfile'),
+            name: $t('Usuario'),
             icon: 'tim-icons icon-single-02',
             path: '/user' }"
         >
@@ -65,19 +84,6 @@
           }"
         ></sidebar-item>
 
-        <sidebar-item
-          :link="{
-            name: $t('sidebar.rtl'),
-            icon: 'tim-icons icon-world',
-            path: localePath('/rtl', 'ar') }"
-        ></sidebar-item>
-
-        <li class="active-pro">
-          <a href="https://www.creative-tim.com/product/nuxt-black-dashboard-pro" target="_blank">
-            <i class="tim-icons icon-spaceship"></i>
-            <p>Upgrade to PRO</p>
-          </a>
-        </li>
       </template>
     </side-bar>
     <!--Share plugin (for demo purposes). You can remove it if don't plan on using it-->
@@ -135,7 +141,7 @@
     },
     data() {
       return {
-        sidebarBackground: 'vue' //vue|blue|orange|green|red|primary
+        sidebarBackground: 'blue' //vue|blue|orange|green|red|primary
       };
     },
     computed: {

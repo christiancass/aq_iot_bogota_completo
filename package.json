@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-black-dashboard",
+  "name": "CS_IoT_SyS",
   "version": "1.1.0",
-  "description": "Nuxt Black Dashboard",
-  "author": "creativetim",
+  "description": "Plataforma IoT multiproposito",
+  "author": "Christian Sarmiento",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -29,6 +29,7 @@
     "vue2-transitions": "0.3.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "babel-plugin-component": "^1.1.1",
     "sass": "1.56.2",
     "sass-loader": "10.1.1"
