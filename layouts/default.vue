@@ -4,7 +4,7 @@
     <side-bar
       :background-color="sidebarBackground"
       :short-title="$t('sidebar.shortTitle')"
-      :title="$t('sidebar.title')"
+      :title="$t('CS IoT SyS: ')"
     >
       <template slot-scope="props" slot="links">
         <sidebar-item
