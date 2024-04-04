@@ -23,6 +23,7 @@
                   label="Widget de gráfico"
                 >
                 </el-option>
+
                 <el-option
                   class="text-dark"
                   value="indicator"
@@ -202,7 +203,7 @@
                 <p>Color</p>
                 <el-select
                   v-model="iotSwitchConfig.class"
-                  class="select-success"
+                  class="select-info"
                   placeholder="Select Class"
                   style="width: 100%;"
                 >
@@ -232,7 +233,7 @@
                 <p>Tamaño en pantalla</p>
                 <el-select
                   v-model="iotSwitchConfig.column"
-                  class="select-success"
+                  class="select-info"
                   placeholder="Select Column Width"
                   style="width: 100%;"
                 >
@@ -324,7 +325,7 @@
                 <p>Color</p>
                 <el-select
                   v-model="configButton.class"
-                  class="select-success"
+                  class="select-info"
                   placeholder="Select Class"
                   style="width: 100%;"
                 >
@@ -354,7 +355,7 @@
                 <p>Tamaño en pantalla</p>
                 <el-select
                   v-model="configButton.column"
-                  class="select-success"
+                  class="select-info"
                   placeholder="Select Column Width"
                   style="width: 100%;"
                 >
@@ -582,6 +583,10 @@
                 v-if="widgetType == 'numberchart'"
                 :config="ncConfig"
               ></Rtnumberchart>
+              <RtnumberchartBar
+                v-if="widgetType == 'numberchartBar'"
+                :config="ncBarConfig"
+              ></RtnumberchartBar>
               <Iotswitch
                 v-if="widgetType == 'switch'"
                 :config="iotSwitchConfig"
@@ -803,6 +808,26 @@
   
   
         ncConfig: {
+          userId: "sampleuserid",
+          selectedDevice: {
+            name: "Home",
+            dId: "8888"
+          },
+          variableFullName: "temperature",
+          variable: "varname",
+          variableType: "input",
+          variableSendFreq: "30",
+          unit: "Watts",
+          class: "success",
+          column: "col-12",
+          decimalPlaces: 2,
+          widget: "numberchart",
+          icon: "fa-sun",
+          chartTimeAgo: 60,
+          demo: true
+        },
+
+        ncConfigBar: {
           userId: "sampleuserid",
           selectedDevice: {
             name: "Home",

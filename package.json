@@ -28,7 +28,8 @@
     "tween.js": "16.6.0",
     "vue-chartjs": "3.5.1",
     "vue-i18n": "8.0.0",
-    "vue2-transitions": "0.3.0"
+    "vue2-transitions": "0.3.0",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
