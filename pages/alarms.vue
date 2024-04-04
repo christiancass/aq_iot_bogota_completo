@@ -13,16 +13,16 @@
                             <label> Variable </label>
                         </slot>
                         <el-select
-                            v-model="selectedIndexTemplate"
+                            v-model="selectedIndexVariable"
                             placeholder="Selecionar variable"
-                            class="select-primary"
+                            class="select-info"
                             style="width:100%"
                         >
                             <el-option
-                                v-for="(template, index) in templates"
-                                :key="template"
-                                :value="template"
-                                :label="template"
+                                v-for="(variable, index) in variables"
+                                :key="variable"
+                                :value="variable"
+                                :label="variable"
                             ></el-option>
                         </el-select>
                     </div> 
@@ -32,9 +32,9 @@
                             <label> Condición </label>
                         </slot>
                         <el-select
-                            v-model="selectedIndexTemplate"
+                            v-model="selectedIndexCondition"
                             placeholder="Seleccionar condición"
-                            class="select-primary"
+                            class="select-info"
                             style="width:100%"
                         >
                             <el-option class="text-dark" value="=" label="="></el-option>
@@ -79,9 +79,9 @@
             </card>
         </div>
   
-      <div class="col-md-12">
+      <div class="col-md-12" >
         <card card-body-classes="table-full-width">
-          <h4 slot="header" class="card-title">Lista de dispositivos</h4>
+          <h4 slot="header" class="card-title">Lista de reglas</h4>
   
           <el-table
             header-cell-class-name="table-transparent"
@@ -166,8 +166,9 @@
   
     data() {
       return {
-        selectedIndexTemplate: '', // El índice de la plantilla seleccionada
-        templates: ['plantilla_1', 'plantilla_2', 'plantilla_3'], // Opciones de plantillas
+        selectedIndexVariable: '', // El índice de la plantilla seleccionada
+        selectedIndexCondition: '', // El índice de la plantilla seleccionada
+        variables: ['plantilla_1', 'plantilla_2', 'plantilla_3'], // Opciones de plantillas
         tableData: [
           // Datos de ejemplo
           {

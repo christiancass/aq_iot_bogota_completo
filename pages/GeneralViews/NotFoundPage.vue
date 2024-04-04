@@ -2,7 +2,7 @@
   <auth-layout class="not-found-page">
     <div class="centered">
       <h1><i class="not-found-icon nc-icon nc-puzzle-10"></i>404</h1>
-      <p>The page you requested could not be found.</p>
+      <p>Página no encontrada</p>
     </div>
   </auth-layout>
 </template>
@@ -34,7 +34,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #344675;
   }
 }
 </style>

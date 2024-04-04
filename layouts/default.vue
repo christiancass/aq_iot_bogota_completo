@@ -3,13 +3,13 @@
     <notifications></notifications>
     <side-bar
       :background-color="sidebarBackground"
-      :short-title="$t('sidebar.shortTitle')"
-      :title="$t('CS IoT SyS: ')"
+      :short-title="'IoT'"
+      :title="'CS IoT SyS:'"
     >
       <template slot-scope="props" slot="links">
         <sidebar-item
           :link="{
-            name: $t('sidebar.dashboard'),
+            name: 'Dashboard',
             icon: 'tim-icons icon-chart-pie-36',
             path: '/'
           }"
@@ -17,7 +17,7 @@
         </sidebar-item>
         <sidebar-item
           :link="{
-            name: $t('Dispositivos'),
+            name: 'Dispositivos',
             icon: 'tim-icons icon-laptop',
             path: '/devices'
           }"
@@ -26,7 +26,7 @@
 
         <sidebar-item
           :link="{
-            name: $t('Alertas'),
+            name: 'Alertas',
             icon: 'tim-icons icon-bell-55',
             path: '/alarms'
           }"
@@ -35,7 +35,7 @@
 
         <sidebar-item
           :link="{
-            name: $t('Notificaciones'),
+            name: 'Notificaciones',
             icon: 'tim-icons icon-chat-33',
             path: '/notifications'
           }"
@@ -44,7 +44,7 @@
 
         <sidebar-item
           :link="{
-            name: $t('Mapa'),
+            name: 'Mapa',
             icon: 'tim-icons icon-pin',
             path: '/google'
           }"
@@ -53,7 +53,16 @@
 
         <sidebar-item
           :link="{
-            name: $t('Íconos'),
+            name: 'Plantillas',
+            icon: 'tim-icons icon-components',
+            path: '/templates'
+          }"
+        >
+        </sidebar-item>
+
+        <sidebar-item
+          :link="{
+            name: 'Íconos',
             icon: 'tim-icons icon-atom',
             path: '/icons'
           }"
@@ -62,7 +71,7 @@
 
         <sidebar-item
           :link="{
-            name: $t('Usuario'),
+            name: 'Usuario',
             icon: 'tim-icons icon-single-02',
             path: '/user' }"
         >
@@ -70,7 +79,7 @@
 
         <sidebar-item
           :link="{
-            name: $t('sidebar.regularTables'),
+            name: 'sidebar.regularTables',
             icon: 'tim-icons icon-puzzle-10',
             path: '/regular'
           }"
@@ -78,7 +87,7 @@
 
         <sidebar-item
           :link="{
-            name: $t('sidebar.typography'),
+            name: 'sidebar.typography',
             icon: 'tim-icons icon-align-center',
             path: '/typography'
           }"

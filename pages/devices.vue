@@ -32,8 +32,8 @@
             </slot>
             <el-select
                 v-model="selectedIndexTemplate"
-                placeholder="Select Template"
-                class="select-primary"
+                placeholder="Eliga plantilla"
+                class="select-info"
                 style="width:100%"
             >
                 <el-option

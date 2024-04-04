@@ -72,21 +72,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/pwa", "nuxt-i18n"],
-  i18n: {
-    locales: [
-      {
-        code: "en",
-        file: "en.js",
-      },
-      {
-        code: "ar",
-        file: "ar.js",
-      },
-    ],
-    lazy: true,
-    langDir: "lang/",
-    defaultLocale: "en",
+  modules: ["@nuxtjs/pwa",
+            "@nuxtjs/axios",
+            "nuxt-highcharts"],
+  
+  axios: {
+    baseURL: process.env.AXIOS_BASE_URL
   },
   /*
    ** Build configuration
